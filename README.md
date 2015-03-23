@@ -1,2 +1,2 @@
-# yaf_hello
-yaf hello application
+# hello_yaf
+yaf hello aplication
