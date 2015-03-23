@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>show user info page</title>
+</head>
+<body>
+    <?php foreach ($data as $id => $value): ?>
+        <?php echo $value['name'] . ' ' . $value['age'] . ' ' . $value['phonenum'];?>&nbsp;&nbsp; 
+        <a href="<?php echo HOST_NAME; ?>/User/Userinfo/update/id/<?php echo $value['id']; ?>">update</a> &nbsp; 
+            or &nbsp; 
+        <a href="<?php echo HOST_NAME; ?>/User/Userinfo/delete/id/<?php echo $value['id']; ?>">delete</a>
+        <br />
+    <?php endforeach ?>
+    <a href="<?php echo HOST_NAME; ?>/User/Userinfo/add">添加</a>
+</body>
+</html>

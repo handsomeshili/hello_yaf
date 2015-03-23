@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>update user info page</title>
+</head>
+<body>
+    <form action="<?php echo HOST_NAME; ?>/User/Userinfo/updateHandle" method="post" >
+        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+        input your name: <input name="name" value="<?php echo $data['name']; ?>"/><br />
+        input your age: <input name="age" value="<?php echo $data['age']; ?>"/><br />
+        input your phone: <input name="phonenum" value="<?php echo $data['phonenum']; ?>"/><br />
+        <input type="submit" name="更新">
+    </form>
+</body>
+</html>
