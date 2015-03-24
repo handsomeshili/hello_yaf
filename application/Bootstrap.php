@@ -22,9 +22,26 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
         // $dispatcher->disableView();
     }
 
-    // public function initDefinePath(Yaf_Dispatcher $dispatcher) {
-    //     define(HOST_NAME, "http://yaf_host.com");
-    // }
+    /**
+     * Method _initDefinePath
+     * 用户自定义一些路径
+     *
+     * @author sily
+     */
+    public function _initDefinePath(Yaf_Dispatcher $dispatcher) {
+        // define(HOST_NAME, "http://yaf_host.com");
+    }
+
+
+    /**
+     * Method _initRoute()
+     * 添加自定义路由协议
+     * 
+     * @author sily
+     */
+    public function _initRoute(Yaf_Dispatcher $dispatcher) {
+        //codes.....
+    }
 
 
 
@@ -72,12 +89,6 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
 
     }
 
-    /**
-     * 添加配置中的路由
-     */
-    public function _initRoute(Yaf_Dispatcher $dispatcher) {
-        //codes....
-    }
 
     public function _initLocalNamespace(Yaf_Dispatcher $dispatcher) {
         $namespace = array(
